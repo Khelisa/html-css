@@ -1,0 +1,46 @@
+<html>
+<head>
+  <title>sign-up</title>
+  <link rel="stylesheet" href="../CSS/DECO.css">
+  <script>
+   function validateForm(){
+
+    var firstName=document.getElementById("firstName").value;
+    var lastName=document.getElementById("lastName").value;
+    var email=document.getElementById("email").value;
+    var password=document.getElementById("password").value;
+    var comfirmPassword=document.getElementById("comfirmPassword").value;
+
+    if(firstName== "" || lastName == "" || email=="" || password=="" || comfirmPassword==""){
+      alert("PLEASE ENSURE THAT ALL GAPS ARE FILLED!!");
+      return false;
+    }else
+      return true;
+   }
+   
+  </script>
+</head>
+<body>
+
+<div class="Sign">
+
+    <h1>Sign Up</h1>
+    <h4>it's free and it takes few minutes</h4>
+
+  <form onsubmit="return validateForm()">
+    <lable >FirstName</lable>
+    <input type="text" id="firstName" ><br><br>
+    <label >lastName</label>
+    <input type="text" id ="lastName" ><br><br>
+    <lable>email</lable>
+    <input type="text" id="email"><br><br>
+    <label>password</label>
+    <input type="password" id="password"><br><br>
+    <label>comfirmPassword</label>
+    <input type="password" id="comfirmPassword"><br><br>
+    <input type="submit"  value="submit">
+  </form>
+</div>
+  
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="../CSS/FRONTEND.css">
+  
+  <script>
+    function validateForm(){     
+
+      var FirstName=document.getElementsById("first-name").value;
+      var lastName=document.getElementById("Last-name").value;
+      var email=document.getElementById("email").value;
+      var password=document.getElementById("password").value;
+      var comfirmPassword=document.getElementById("comfirm-password").value;
+
+      if( FirstName==="" || lastName==="" || email===""  || password==="" || comfirmPassword===""){
+          alert("PLEASE FILL IN ALL REQUIRED FIELDS");
+          return false;
+        }
+
+        return true;
+          
+
+      }
+  </script>
+</head>
+
+
+<body>
+
+  <div class="sign-up">
+
+      <h1>Sign Up</h1>
+      <h4>it's free and it takes few minutes</h4>
+
+      <form onsubmit="return validateForm()">
+        <label>FirstName</label>
+        <input type="text" id="FirstName">
+        <label>LastName</label>
+        <input type="text"  id="LastName">
+        <label>Email</label>
+        <input type="text"  id="email">
+        <label>password</label>
+        <input type="text" id="password">
+        <label>comfirmPassword</label>
+        <input type="text" id="comfirmPassword">
+
+        <input type="submit" value="submit" class="btn">
+
+      </form>
+
+      <p>By clicking  the button below you agree to our<BR>
+        <a href="#">Terms and condition</a> and <a href="#"> policy and privacy</a>
+        </p>
+  </div>
+  
+
+  <p class="para-2">Already have an acount?  <a href="login.html"> LOGIN HERE</a></p>
+  
+</body>
+</html>

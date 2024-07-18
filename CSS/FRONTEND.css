@@ -1,0 +1,84 @@
+body{
+ background-image: url("../IMAGES/man.jpg");
+ background-position: right;
+ background-size: auto;
+  font-family: 'roboto', sans-serif;
+}
+
+.sign-up{
+  width:360px;
+  height:620px;
+  margin: auto;
+  background-color: whitesmoke; 
+  border-radius: 3px;
+
+}
+
+.Login-box{
+  width: 360px;
+  height: 280px;
+  
+  background-color: whitesmoke;
+  border-radius: 3px;
+  margin-left:5cm;
+}
+
+h1{
+   text-align: center;
+   padding-top: 15px;
+}
+
+h4{
+  text-align: center;
+}
+
+form{
+  width:300px;
+  margin-left: 20px;
+}
+
+label{
+  display: flex;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+input[type="text"]{
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 10px;
+  outline: none;
+  background-color: whitesmoke;
+}
+
+
+.btn{
+
+  width:315px;
+  height: 35px;
+  margin-top: 20px;
+  border:none;
+  background-color: rgba(27, 129, 92, 0.784);
+  color:white;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 17px;
+                  
+}
+
+p{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
+
+}
+
+.para-2{
+  text-align: center;
+  color: bisque;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
